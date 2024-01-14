@@ -230,8 +230,58 @@ header {
   font-size: 20px;
   padding: 10px 0 20px 0;
 }
-
 /* third section code ends */
+
+/* Fourth Section Code Start */
+#fourth-section{
+     background-color: #154360;
+     padding: 100px 0;
+     color: white;
+}
+.advice-parent{
+     display: flex;
+     margin: 0 200px;
+     gap: 50px;
+}
+.advice-img-box img{
+     width: 100%;
+}
+.single-advice p{
+     margin: 20px 0;
+     line-height: 1.5;
+     text-align: justify;
+}
+.single-advice h3{
+     font-size: 25px;
+     border-bottom: 2px solid red;
+     padding-bottom: 20px;
+}
+.single-advice h4{
+     font-size: 25px;
+     margin-top: 10px;
+}
+.single-advice a{
+     text-decoration: none;
+     background-color: white;
+     color: black;
+     padding: 10px 30px;
+     display: inline-block;
+     margin-top: 20px;
+     border-radius: 40px;
+     font-size: 18px;
+     transition: 0.3s;
+}
+.advice-icon{
+     text-align: center;
+}
+.advice-icon a{
+     margin: 0 5px;
+     border: 1px solid black;
+}
+.single-advice a:hover{
+     background-color: wheat;
+}
+/* Fourth Section Code ends */
 
 /* Responsive code */
 @media only screen and (max-width: 688px) {
@@ -264,6 +314,20 @@ header {
     grid-gap: 10px;
     margin-top: 50px;
   }
+  /* fourth sectiton start */
+  .advice-parent{
+     display: block;
+     margin: 0 30px;
+}
+.advice-icon{
+     text-align: left;
+}
+.advice-icon a{
+     margin: 10px 5px
+}
+.single-advice h3{
+     margin-top: 50px;
+}
 }
 @media only screen and (min-width: 689px) and (max-width: 1199px) {
   #service-parent {
@@ -294,4 +358,15 @@ header {
     grid-gap: 20px;
     margin-top: 50px;
   }
+  /* fourth sectiton start */
+  .advice-parent{
+     display: flex;
+     margin: 0 70px;
+}
+.advice-icon{
+     text-align: center;
+}
+.advice-icon a{
+     margin: 10px 5px
+}
 }
