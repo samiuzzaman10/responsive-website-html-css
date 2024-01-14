@@ -8,7 +8,7 @@
 body {
   font-family: Montserrat;
 }
-
+/* Nav Section Code start */
 nav {
   display: flex;
   justify-content: space-between;
@@ -90,13 +90,76 @@ nav ul li .active {
     color: red;
   }
 }
-/* Nav Section Responsive Code Ends */
+/* Nav Section Code Ends */
 
 /* Header Section code start */
-header{
-     height: 92vh;
-     background-image: url("images/banner.jpg");
-     background-position: center center;
-     background-repeat: no-repeat;
-     background-size: cover;
+header {
+  height: 92vh;
+  background-image: url("images/banner.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+/* Header Section code ends */
+
+/* First Section code start */
+#first-section {
+  background-color: #16213e;
+}
+.service-title{
+     text-align: center;
+     color: white;
+     padding: 50px 0;
+     letter-spacing: 0.2em;
+     font-size: 28px;
+
+}
+#service-parent {
+  width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+  padding-bottom: 100px;
+}
+.single-service {
+  background-color: white;
+  text-align: center;
+  color: black;
+  padding: 30px 20px;
+  border-radius: 5px;
+  border: 3px solid green;
+  box-shadow: 5px 5px 10px gray;
+}
+.single-service i {
+  font-size: 40px;
+}
+.single-service h2 {
+  margin: 10px 0;
+  font-weight: bold;
+}
+.single-service p{
+     font-weight: bold;
+}
+
+/* Responsive code */
+@media only screen and (max-width: 688px) {
+  #service-parent {
+     display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+  }
+  .single-service {
+    
+  }
+}
+@media only screen and (min-width: 689px) and (max-width: 1199px) {
+     #service-parent {
+     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    width: 100%;
+  }
+}
+/* First Section end start */
