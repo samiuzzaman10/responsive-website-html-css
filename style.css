@@ -142,17 +142,65 @@ header {
      font-weight: bold;
 }
 
+
+/* First Section end start */
+
+/* Secend section code start */
+#second-section{
+     background-color: #154360;
+     padding: 50px 0 100px 0;
+}
+.smart-title{
+     text-align: center;
+     color: yellow;
+     font-size: 35px;
+     letter-spacing: 0.2em;
+     margin-bottom: 30px;
+}
+#smart-parent{
+     margin: 0 200px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+.smart-text{
+     color: white;
+}
+.smart-text h2{
+     margin: 20px 0;
+     font-size: 30px;
+}
+.smart-text a{
+     text-decoration: none;
+     font-size: 22px;
+     background-color: bisque;
+     color: black;
+     padding: 10px 30px;
+     border: 5px;
+     margin-top: 40px;
+     display: inline-block;
+}
+
+/* Secend section code ends */
+
 /* Responsive code */
 @media only screen and (max-width: 688px) {
+     /* first section code */
   #service-parent {
      display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
     width: 100%;
   }
-  .single-service {
-    
-  }
+   /* secend section code */
+     #smart-parent{
+     margin: 0 30px;
+     display: block;
+}
+.smart-image img{
+     width: 100%;
+     margin-bottom: 50px;
+}
 }
 @media only screen and (min-width: 689px) and (max-width: 1199px) {
      #service-parent {
@@ -161,5 +209,13 @@ header {
     grid-gap: 20px;
     width: 100%;
   }
+  /* secend section code */
+     #smart-parent{
+     margin: 0 70px;
+     display: block;  
 }
-/* First Section end start */
+.smart-image img{
+     width: 100%;
+     margin-bottom: 70px;
+}
+}
