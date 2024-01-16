@@ -409,6 +409,48 @@ form p {
 }
 /* Seven Section Code end */
 
+/* Footer secton Code start */
+footer {
+  background-color: #154360;
+  padding: 100px 0 50px 0;
+}
+#footer-parent {
+  display: flex;
+  margin: 0 200px;
+  color: white;
+  gap: 80px;
+}
+.single-footer {
+  width: 100%;
+}
+.single-footer h5 {
+  margin-bottom: 25px;
+  letter-spacing: 3px;
+}
+.single-footer-2 p {
+  margin: 15px;
+  color: white;
+}
+.single-footer-2 a {
+  text-decoration: none;
+  color: white;
+}
+.single-footer-3 ul {
+  display: flex;
+  list-style-type: none;
+}
+.single-footer-3 ul li a {
+  text-decoration: none;
+  color: white;
+  margin: 0 5px;
+  background-color: #0a273863;
+  padding: 8px;
+}
+.single-footer h5 span {
+  color: yellow;
+}
+/* Footer secton Code ends */
+
 /* Responsive code */
 @media only screen and (max-width: 688px) {
   /* first section code */
@@ -476,8 +518,22 @@ form p {
     display: block;
     margin: 0 30px;
   }
-  .single-takeCare{
+  .single-takeCare {
     margin-bottom: 70px;
+  }
+
+  /* Footer section code */
+  #footer-parent {
+    display: block;
+    margin: 0 30px;
+  }
+  .single-footer{
+    
+    text-align: center;
+  }
+  .single-footer-3 ul{
+    display: flex;
+    justify-content: center;
   }
 }
 @media only screen and (min-width: 689px) and (max-width: 1199px) {
@@ -537,7 +593,7 @@ form p {
   .first-single-match {
     text-align: center;
   }
-    /* Six section code start */
+  /* Six section code start */
   #match-parent {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -553,7 +609,20 @@ form p {
     display: block;
     margin: 0 70px;
   }
-  .single-takeCare{
+  .single-takeCare {
     margin-bottom: 80px;
+  }
+   /* Footer section code */
+  #footer-parent {
+    
+    margin: 0 70px;
+  }
+  .single-footer{
+    
+    text-align: center;
+  }
+  .single-footer-3 ul{
+    display: flex;
+    justify-content: center;
   }
 }
